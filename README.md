@@ -32,12 +32,78 @@ Create a HTML file to implement form based input and output.
 Publish the website in the given URL.
 
 ## PROGRAM :
+```
+math.html
 
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Area of a Rectangle</title>
+    <style>
+      body {
+        background-color: #48a5f0e2;
+        font-family: Arial, sans-serif;
+      }
+
+      .box {
+        width: 500px;
+        margin: 100px auto;
+        background-color: #4c5cd6eb;
+        padding: 30px;
+        border: 5px line rgb(50, 191, 206);
+        color: white;
+        text-align: center;
+      }
+
+      h1 {
+        color: pink;
+      }
+
+      input {
+        width: 200px;
+        padding: 5px;
+        margin: 8px;
+      }
+
+      button {
+        padding: 5px 15px;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="box">
+      <h1>Area of a Rectangle</h1>
+
+      <form method="POST">
+        {% csrf_token %} Length :
+        <input type="number" name="length" value="{{ length|default:0 }}" /> (in
+        m) <br /><br />
+
+        Breadth :
+        <input type="number" name="breadth" value="{{ breadth|default:0 }}" />
+        (in m) <br /><br />
+
+        <button type="submit">Calculate</button>
+        <br /><br />
+
+        Area :
+        <input type="text" value="{{ area|default:0 }}" readonly /> m<sup
+          >2</sup
+        >
+      </form>
+    </div>
+  </body>
+</html>
+```
 
 ## SERVER SIDE PROCESSING:
+<img width="1494" height="754" alt="math" src="https://github.com/user-attachments/assets/59102fd2-8fe7-4382-a27f-71d9a04a1144" />
 
 
 ## HOMEPAGE:
+<img width="840" height="634" alt="math" src="https://github.com/user-attachments/assets/8eb66864-aa46-4896-bdd7-482b38b8e48a" />
 
 
 ## RESULT:
