@@ -99,12 +99,10 @@ math.html
 ```
 
 ## SERVER SIDE PROCESSING:
-<img width="1494" height="754" alt="math" src="https://github.com/user-attachments/assets/59102fd2-8fe7-4382-a27f-71d9a04a1144" />
-
+![alt text](math-1cc.png)
 
 ## HOMEPAGE:
-<img width="840" height="634" alt="math" src="https://github.com/user-attachments/assets/8eb66864-aa46-4896-bdd7-482b38b8e48a" />
-
+![alt text](math.png)
 
 ## RESULT:
 The program for performing server side processing is completed successfully.
